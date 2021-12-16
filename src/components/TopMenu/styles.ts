@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  padding: 0.5rem 1rem;
 
-  background-color: gray;
+  background-color: lightgray;
 
   > .menu-content {
     max-width: 1120px;
@@ -30,7 +31,7 @@ export const Container = styled.div`
       font-size: 1.125rem;
 
       & + button {
-        margin-left: 0.25rem;
+        margin-left: 0.5rem;
         background: blue;
       }
 
