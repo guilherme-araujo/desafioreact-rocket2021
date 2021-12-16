@@ -9,19 +9,23 @@ export const Container = styled.div`
 
   > .menu-content {
     max-width: 1120px;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
+
+    @media (max-width: 675px) {
+      justify-content: space-around;
+    }
   }
 
   .menu-buttons {
     display: flex;
 
     button {
-      background: red;
+      background: var(--red);
       color: white;
       border: 0;
 
@@ -32,7 +36,7 @@ export const Container = styled.div`
 
       & + button {
         margin-left: 0.5rem;
-        background: blue;
+        background: var(--darkblue);
       }
 
       transition: filter 0.2s;

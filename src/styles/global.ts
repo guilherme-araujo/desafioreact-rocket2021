@@ -8,6 +8,14 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  :root {
+    --red: #eb0025;
+    --darkblue: #00439e;
+    --lightblue: #006fc1;
+    --yellow: #f78b00;
+    --fontblue: #0a0055;
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
   }

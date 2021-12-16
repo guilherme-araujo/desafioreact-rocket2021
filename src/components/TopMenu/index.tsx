@@ -4,7 +4,7 @@ export function TopMenu() {
   return (
     <Container>
       <div className="menu-content">
-        <h2>CentraLearn</h2>
+        <img src="/centraLearn-transparent.png" alt="centralearn logo" />
         <div className="menu-buttons">
           <button>Sou Empresa</button>
           <button>Sou Candidato</button>
