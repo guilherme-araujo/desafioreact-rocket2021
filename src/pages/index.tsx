@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { GetStaticProps } from "next";
+import Client from "../services/prismic";
+import Prismic from "@prismicio/client";
 import { Banner } from "../components/Banner";
 import { CandidatoEmpresa } from "../components/CandidatoEmpresa";
 import { CursosRecentes } from "../components/CursosRecentes";
@@ -29,3 +32,19 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const prismic = Client();
+
+  /*const response = await prismic.query([
+    Prismic.predicates.at("document.type", "topbanner"),
+  ]);*/
+  console.log("oi");
+  const response = await prismic.query("");
+
+  console.log(response);
+
+  return {
+    props: { response },
+  };
+};
