@@ -1,9 +1,15 @@
+import { Container } from "./styles";
+
 export function TopMenu() {
   return (
-    <div>
-      <h3>CentraLearn</h3>
-      <button>Sou Empresa</button>
-      <button>Sou Candidato</button>
-    </div>
+    <Container>
+      <div className="menu-content">
+        <h2>CentraLearn</h2>
+        <div className="menu-buttons">
+          <button>Sou Empresa</button>
+          <button>Sou Candidato</button>
+        </div>
+      </div>
+    </Container>
   );
 }
