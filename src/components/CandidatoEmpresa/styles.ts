@@ -15,12 +15,17 @@ export const Container = styled.div`
       margin-top: 0.5rem;
     }
     .candLeft {
+      margin-left: 2rem;
       h3 {
         font-size: 2rem;
       }
     }
     .candRight {
-      margin-left: 1rem;
+      margin: 0 auto;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       button {
         margin-top: 1rem;
         background: var(--darkblue);
@@ -45,13 +50,15 @@ export const Container = styled.div`
       height: 200px;
     }
     .empresaRight {
+      margin-left: 2rem;
       h3 {
         font-size: 2rem;
       }
     }
     .empresaLeft {
       text-align: right;
-      margin-right: 1rem;
+      margin: 0 auto;
+      max-width: 600px;
       display: flex;
       flex-direction: column;
       justify-content: center;
