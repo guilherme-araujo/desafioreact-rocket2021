@@ -1,11 +1,22 @@
 import { Container } from "./styles";
 
-export function Banner() {
+type HeaderContent = {
+  text: string;
+};
+
+type BannerProps = {
+  data: {
+    header1: Array<HeaderContent>;
+    header2: Array<HeaderContent>;
+  };
+};
+
+export function Banner({ data }: BannerProps) {
   return (
     <Container>
       <div className="banner-content">
-        <h1>Participe de programas de formação...</h1>
-        <h2>Conectamos empresas interessadas em...</h2>
+        <h1>{data.header1[0].text}</h1>
+        <h2>{data.header2[0].text}</h2>
       </div>
     </Container>
   );

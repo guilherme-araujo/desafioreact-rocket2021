@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 0.5rem 1rem;
-  background-color: navy;
+  background-color: var(--lightblue);
   .banner-content {
     width: 100%;
     max-width: 1120px;
