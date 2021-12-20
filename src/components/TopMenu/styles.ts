@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 0.5rem 1rem;
 
-  background-color: lightgray;
+  background-color: #dcdcdc;
 
   > .menu-content {
     max-width: 1120px;
