@@ -1,18 +1,14 @@
+import { Container } from "./style";
+
 type CursoItemProps = {
   img?: string;
   titulo: string;
   participantes: number;
-  empresa: string;
 };
 
-export function CursoItem({
-  img,
-  titulo,
-  participantes,
-  empresa,
-}: CursoItemProps) {
+export function CursoItem({ img, titulo, participantes }: CursoItemProps) {
   return (
-    <div>
+    <Container>
       {img ? (
         <img src={img} alt={titulo} />
       ) : (
@@ -20,7 +16,6 @@ export function CursoItem({
       )}
       <h4>{titulo}</h4>
       <p>{participantes} participantes</p>
-      <h4>{empresa}</h4>
-    </div>
+    </Container>
   );
 }

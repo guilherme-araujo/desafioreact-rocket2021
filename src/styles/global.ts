@@ -28,4 +28,14 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  footer {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    p {
+      margin 1rem 0;
+    }
+  }
 `;

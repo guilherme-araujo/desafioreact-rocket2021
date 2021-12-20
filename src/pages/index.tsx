@@ -17,7 +17,7 @@ export default function Home({
       <main>
         <Banner data={topbanner.data} />
         <CandidatoEmpresa data={candidateCompany.data} />
-        <CursosRecentes />
+        <CursosRecentes recentCourses={recentCourses} />
       </main>
 
       <footer>
@@ -31,6 +31,7 @@ export default function Home({
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
+        <p>Developed by Guilherme Araújo</p>
       </footer>
     </div>
   );
@@ -52,13 +53,12 @@ export async function getStaticProps() {
   const recentCourses = await client.query(
     Prismic.Predicates.at("document.type", "recentcourses")
   );
-  console.log(candidateCompany.results[0].data);
   return {
     props: {
       topbanner: topbanner.results[0],
       candidateCompany: candidateCompany.results[0],
       companies: companies.results,
-      recentCourses: recentCourses,
+      recentCourses: recentCourses.results,
     },
   };
 }
